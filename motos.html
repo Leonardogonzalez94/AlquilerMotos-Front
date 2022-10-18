@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functionMotorbike.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <h1>Motos</h1>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria.html">Categoria</a></li>
+        <li><a href="cliente.html">Clientes</a></li>
+        <li><a href="mensajes.html">Mensajes</a></li>
+        <li><a href="reservaciones.html">Reservaciones</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+
+
+
+    <div>
+
+        <input type="text" id="name" placeholder="nombre">
+        <input type="text" id="brand" placeholder="marca">
+        <input type="number" id="year" placeholder="año">
+        <input type="text" id="description" placeholder="descripción">
+
+        <select id="select-categoria"></select>
+
+        <script type="text/javascript">
+            window.onload = getCategoria_Motorbike();
+        </script>
+    </div>
+
+    <button onclick="postMotorbike()">
+        Crear Moto
+    </button>
+
+    <script type="text/javascript">
+        window.onload = getMotorbike();
+    </script>
+
+    <div id="resultadoMoto"></div>
+
+</body>
+
+</html>
